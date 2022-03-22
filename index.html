@@ -150,6 +150,7 @@
             position: absolute;
             top: 65px;
             right: -19px;
+            cursor: pointer;
         }
 
         .avatar {
@@ -198,6 +199,10 @@
             border: 0px;
             box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 
     <title>CRM</title>
@@ -231,7 +236,7 @@
                 <hr>
             </div>
             <div class="menu">
-                <ul>
+                <ul class="menu--lista">
                     <li class="item">
                         <span class="img">
                             <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
@@ -303,9 +308,45 @@
         </nav>
 
         <iframe title="Preço" width="1136" height="580"
-            src="https://app.powerbi.com/reportEmbed?reportId=7ca0a402-9976-412c-82d4-3fd84bb5536f&groupId=8a0cbe8f-cd83-4f59-bfe5-9591fdfc14e3&autoAuth=true&ctid=a67f074e-4e9f-4941-a52d-1b388419ab34&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&filterPaneEnabled=false"
+            src="https://app.powerbi.com/reportEmbed?reportId=7ca0a402-9976-412c-82d4-3fd84bb5536f&groupId=8a0cbe8f-cd83-4f59-bfe5-9591fdfc14e3&autoAuth=true&ctid=a67f074e-4e9f-4941-a52d-1b388419ab34&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&filterPaneEnabled=false&navContentPaneEnabled=false"
             frameborder="0" allowFullScreen="true"></iframe>
     </main>
+
+    <script>
+        window.onload = function() {
+            var navbutton = document.querySelector('.navbutton');
+            var logo = document.querySelector('.logo img');
+            var nav = document.querySelector('nav');
+            var labels = document.querySelectorAll('.label');
+            var imgr = document.querySelectorAll('.imgr');
+            var home = document.querySelector('.home');
+            var frame = document.querySelector('iframe');
+
+            // console.log(imgr[0].classList.add('hidden'));
+
+            navbutton.addEventListener('click', function (e) {
+                
+                if(nav.style.width === '60px') {
+                    nav.style.width = '240px';
+                    labels.forEach(e => e.classList.remove('hidden'));
+                    imgr.forEach(e => e.classList.remove('hidden'));
+                    logo.style.width = '128px';
+                    home.style.left = '240px';
+                    frame.style.marginLeft = '238px'
+                    frame.setAttribute('width','1136');
+                }else {
+                    nav.style.width = '60px';
+                    labels.forEach(e => e.classList.add('hidden'));
+                    imgr.forEach(e => e.classList.add('hidden'));
+                    logo.style.width = '46px'
+                    home.style.left = '50px';
+                    frame.style.marginLeft = '62px';
+                    frame.setAttribute('width','1200');
+               }
+
+            })
+        }
+    </script>
 </body>
 
 </html>
