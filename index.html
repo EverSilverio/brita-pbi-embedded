@@ -38,10 +38,15 @@
             box-sizing: border-box;
             flex-shrink: 0;
             flex-direction: row;
-            /* box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%); */
             font-weight: normal;
             font-size: 12px;
             color: rgb(226, 226, 226);
+
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+            
         }
 
         .home {
@@ -78,6 +83,7 @@
 
         iframe {
             margin-left: 238px;
+            margin-top: 64px;
         }
 
         .logo {
@@ -198,17 +204,13 @@
 </head>
 
 <body>
-    <div class="div"></div>
-
     <header>
         <div class="home">
             <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
             </svg>
         </div>
-        <strong>## v2.10.0 - AMBIENTE DE HOMOLOGAÇÃO ## - </strong>
-        &nbsp;Olá,
-        <strong>usuario.nome</strong>
+        <div><strong>## v2.10.0 - AMBIENTE DE HOMOLOGAÇÃO ## - </strong> &nbsp;Olá, <strong>usuario.nome</strong></div>
         <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>        
         <div class="avatar">
             <img src="./profile_avatar_default.png">
