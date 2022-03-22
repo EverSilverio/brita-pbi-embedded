@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            list-style-type: none;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            font-size: 0.875rem;
+            font-family: 'Maven Pro', 'Poppins', sans-serif, Arial, 'Open Sans';
+            font-weight: 400;
+            line-height: 1.43;
+            background-color: #E5E5E5;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border: 0px;
+            background-color: white;
+            height: 64px;
+            padding-right: 20px;
+            z-index: 1100;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            flex-direction: row;
+            box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+            margin-bottom: 10px;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgb(226, 226, 226);
+        }
+
+        .home {
+            position: absolute;
+            fill: #757575;
+            left: 240px;
+        }
+
+        .home svg {
+            width: 24px;
+        }
+
+        strong {
+            color: rgb(21, 41, 66);
+            font-weight: normal;
+        }
+
+        main {
+            display: flex;
+        }
+
+        nav {
+            z-index: 1101;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #152942;
+            color: #152942;
+            fill: #9D9D9D;
+            color: #9D9D9D;
+            width: 240px;
+        }
+
+        iframe {
+            margin-left: 245px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 39px;
+        }
+
+        .logo img {
+            padding-top: 10px;
+        }
+
+        .hr {
+            display: flex;
+            justify-content: center;
+        }
+
+        hr {
+            margin-top: 15px;
+            width: 60%;
+            background: rgb(128, 163, 180);
+            height: 2px;
+            border-radius: 50px;
+            border: none;
+            flex-shrink: 0;
+        }
+
+        .menu {
+            padding-top: 15px;
+        }
+
+        .item {
+            display: flex;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        svg {
+            width: 21px;
+            margin: 0 16px;
+        }
+
+        .img.casa {
+            fill: #CD9A33 !important;
+        }
+
+        .imgr {
+            position: absolute;
+            right: 0px;
+        }
+
+        .label {
+            font-size: 1rem;
+        }
+
+        .label.casa {
+            color: #FFF !important;
+            font-weight: 600;
+        }
+
+        .navbutton {
+            z-index: 1102;
+            position: absolute;
+            top: 65px;
+            right: -19px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            font-size: 1.25rem;
+            align-items: center;
+            flex-shrink: 0;
+            font-family: 'Maven Pro', 'Poppins', sans-serif, Arial, 'Open Sans';
+            line-height: 1;
+            user-select: none;
+            border-radius: 50%;
+            justify-content: center;
+            margin-left: 15px;
+            margin-right: -10px;
+        }
+
+        .avatar img {
+            color: transparent;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            text-align: center;
+            text-indent: 10000px;
+        }
+
+        .alert {
+            position: relative;
+            right: -20px;
+            display: flex;
+            justify-content: center;
+            background-color: #152942;
+            height: 100%;
+            width: 60px;
+        }
+    </style>
+
+    <title>CRM</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="home">
+            <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+            </svg>
+        </div>
+        <strong>## v2.10.0 - AMBIENTE DE HOMOLOGAÇÃO ## - </strong>
+        &nbsp;Olá,
+        <strong>usuario.nome</strong>
+        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>        
+        <div class="avatar">
+            <img src="http://10.0.8.26:3433/static/media/profile_avatar_default.4788048f.png">
+        </div>
+
+        <div class="alert">
+            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="fill: rgb(255, 87, 87);"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg>            
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <div class="logo">
+                <img src="http://10.0.8.26:3433/static/media/logo.cc64fdac.svg" alt="logo">
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="item">
+                        <span class="img">
+                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M5 2c0-.55-.45-1-1-1s-1 .45-1 1v4H1v6h6V6H5V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2H9v2zm-8 0c0 1.3.84 2.4 2 2.82V23h2v-4.18C6.16 18.4 7 17.3 7 16v-2H1v2zM21 6V2c0-.55-.45-1-1-1s-1 .45-1 1v4h-2v6h6V6h-2zm-8-4c0-.55-.45-1-1-1s-1 .45-1 1v4H9v6h6V6h-2V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2h-6v2z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="label">Administrativo</span>
+                        <span class="imgr">
+                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="img">
+                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="label">Cadastro</span>
+                        <span class="imgr">
+                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="img">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd">
+                                <path
+                                    d="M12.628 21.412l5.969-5.97 1.458 3.71-12.34 4.848-4.808-12.238 9.721 9.65zm-1.276-21.412h-9.352v9.453l10.625 10.547 9.375-9.375-10.648-10.625zm4.025 9.476c-.415-.415-.865-.617-1.378-.617-.578 0-1.227.241-2.171.804-.682.41-1.118.584-1.456.584-.361 0-1.083-.408-.961-1.218.052-.345.25-.697.572-1.02.652-.651 1.544-.848 2.276-.106l.744-.744c-.476-.476-1.096-.792-1.761-.792-.566 0-1.125.227-1.663.677l-.626-.627-.698.699.653.652c-.569.826-.842 2.021.076 2.938 1.011 1.011 2.188.541 3.413-.232.6-.379 1.083-.563 1.475-.563.589 0 1.18.498 1.078 1.258-.052.386-.26.763-.621 1.122-.451.451-.904.679-1.347.679-.418 0-.747-.192-1.049-.462l-.739.739c.463.458 1.082.753 1.735.753.544 0 1.087-.201 1.612-.597l.54.538.697-.697-.52-.521c.743-.896 1.157-2.209.119-3.247zm-9.678-7.476c.938 0 1.699.761 1.699 1.699 0 .938-.761 1.699-1.699 1.699-.938 0-1.699-.761-1.699-1.699 0-.938.761-1.699 1.699-1.699z" />
+                            </svg>
+                        </span>
+                        <span class="label">Tabela de Preços</span>
+                        <span class="imgr">
+                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="img casa">
+                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                            </svg>
+                        </span>
+                        <span class="label casa">Início</span>
+                    </li>
+                </ul>
+            </div>
+            <span class="navbutton"><svg width="16" height="68" viewBox="0 0 16 68" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="68">
+                        <rect width="16" height="68" fill="#C4C4C4"></rect>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M-221 -90.5637H-237V-74.5637C-237 -83.4003 -229.837 -90.5637 -221 -90.5637ZM0 -90.5637C8.83655 -90.5637 16 -83.4003 16 -74.5637V-90.5637H0ZM16 0.0508575C16 6.83192 11.2685 12.5561 6.5979 17.4722C2.50905 21.7759 0 27.595 0 34C0 40.4051 2.50905 46.2241 6.5979 50.5278C11.2685 55.444 16 61.1681 16 67.9492V0.0508575ZM16 788.725C16 797.562 8.83655 804.725 0 804.725H16V788.725ZM-221 804.725C-229.837 804.725 -237 797.562 -237 788.725V804.725H-221Z"
+                            fill="#FFF"></path>
+                    </g>
+                    <path d="M7 38.3794L5 34.1897L7 30M11 38.3794L9 34.1897L11 30" stroke="#152942" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></span>
+        </nav>
+
+        <iframe title="Preço" width="1136" height="580"
+            src="https://app.powerbi.com/reportEmbed?reportId=7ca0a402-9976-412c-82d4-3fd84bb5536f&groupId=8a0cbe8f-cd83-4f59-bfe5-9591fdfc14e3&autoAuth=true&ctid=a67f074e-4e9f-4941-a52d-1b388419ab34&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&filterPaneEnabled=false"
+            frameborder="0" allowFullScreen="true"></iframe>
+    </main>
+</body>
+
+</html>
