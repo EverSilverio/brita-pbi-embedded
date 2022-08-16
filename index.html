@@ -43,6 +43,14 @@
                     <li class="item">
                         <span class="img">
                             <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                            </svg>
+                        </span>
+                        <span class="label">Início</span>
+                    </li>   
+                    <li class="item">
+                        <span class="img">
+                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
                                     d="M5 2c0-.55-.45-1-1-1s-1 .45-1 1v4H1v6h6V6H5V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2H9v2zm-8 0c0 1.3.84 2.4 2 2.82V23h2v-4.18C6.16 18.4 7 17.3 7 16v-2H1v2zM21 6V2c0-.55-.45-1-1-1s-1 .45-1 1v4h-2v6h6V6h-2zm-8-4c0-.55-.45-1-1-1s-1 .45-1 1v4H9v6h6V6h-2V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2h-6v2z">
                                 </path>
@@ -88,17 +96,10 @@
                             </svg>
                         </span>
                         <span class="label select">Diário Estoque</span>
-                    </li>   
-                    <li class="item">
-                        <span class="img">
-                            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
-                            </svg>
-                        </span>
-                        <span class="label">Início</span>
-                    </li>                    
+                    </li>                   
                 </ul>
             </div>
+            
             <span class="navbutton"><svg width="16" height="68" viewBox="0 0 16 68" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="68">
@@ -121,7 +122,8 @@
 
         <iframe id="fr-diario" title="Diário" width="1136" height="580" style="display: none;"
             src="https://app.powerbi.com/reportEmbed?reportId=21a0c058-2639-46c0-9115-e368ac19a571&groupId=8a0cbe8f-cd83-4f59-bfe5-9591fdfc14e3&autoAuth=true&ctid=a67f074e-4e9f-4941-a52d-1b388419ab34&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&filterPaneEnabled=false&navContentPaneEnabled=false"
-            frameborder="0" allowFullScreen="true"></iframe>     
+            frameborder="0" allowFullScreen="true">
+        </iframe>     
 
     </main>
 
@@ -139,7 +141,6 @@
             var menuTabela = document.querySelector('#tabela');
 
             frDiario.style.display = 'block';
-
 
             navbutton.addEventListener('click', function (e) {
                 if(nav.style.width === '60px') {
